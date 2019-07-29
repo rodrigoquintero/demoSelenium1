@@ -19,19 +19,19 @@ public class TC001 {
 	@Parameters
     public static Iterable data(){
         return Arrays.asList(new Object[][]{
-                {"HOLA MUNDO 1"},{"HOLA MUNDO 2"},{"HOLA MUNDO 3"}
+                {"HOLA MUNDO 1."},{"HOLA MUNDO 2."},{"HOLA MUNDO 3."}
         });
     }
  
     private String mensaje;
- 
+    WebDriver driver;
+
     public TC001(String mensaje) {
         this.mensaje = mensaje;
     }
 
     
-    WebDriver driver;
-	
+    	
 	
 	@Before
 	public void beforeTest() {
